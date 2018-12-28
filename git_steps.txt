@@ -1,0 +1,130 @@
+Microsoft Windows [版本 10.0.17134.471]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\shawnx>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Users\shawnx>cd..
+
+C:\Users>cd D:\FE\code\che
+
+C:\Users>cd D:\FE\code\che
+
+C:\Users>d:
+
+D:\FE\code\che>git config --global user.name
+
+D:\FE\code\che>git config --global user.name 'big'
+
+D:\FE\code\che>git config --global user.email 'williamwang601@gmail.com'
+
+D:\FE\code\che>git config-l
+git: 'config-l' is not a git command. See 'git --help'.
+
+D:\FE\code\che>git config -l
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name='big'
+user.email='williamwang601@gmail.com'
+
+D:\FE\code\che>git init
+Initialized empty Git repository in D:/FE/code/che/.git/
+
+D:\FE\code\che>git remote add origin https://github.com/shawngithub01/testoneche.git
+
+D:\FE\code\che>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        folderfile.txt
+        new/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\FE\code\che>git add *
+
+D:\FE\code\che>git commit -m 'first commit'
+error: pathspec 'commit'' did not match any file(s) known to git
+
+D:\FE\code\che>git commit -m 'first_commit'
+[master (root-commit) 6e32a40] 'first_commit'
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 folderfile.txt
+ create mode 100644 new/file.txt
+
+D:\FE\code\che>git push -u or origin master
+error: src refspec origin does not match any.
+error: failed to push some refs to 'or'
+
+D:\FE\code\che>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 293 bytes | 73.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/shawngithub01/testoneche.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+D:\FE\code\che>
